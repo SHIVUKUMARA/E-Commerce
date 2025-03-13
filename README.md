@@ -158,3 +158,221 @@ Ensure you have the following installed:
 - Open for Contributions! 🚀
 
 ---
+```
+EcommerceApi/
+├─ .mvn/
+│  └─ wrapper/
+│     └─ maven-wrapper.properties
+├─ .settings/
+│  ├─ org.eclipse.core.resources.prefs
+│  ├─ org.eclipse.jdt.apt.core.prefs
+│  ├─ org.eclipse.jdt.core.prefs
+│  ├─ org.eclipse.m2e.core.prefs
+│  └─ org.springframework.ide.eclipse.prefs
+├─ src/
+│  ├─ main/
+│  │  ├─ java/
+│  │  │  └─ com/
+│  │  │     └─ example/
+│  │  │        └─ E_Commerce/
+│  │  │           ├─ config/
+│  │  │           │  ├─ AppConfig.java
+│  │  │           │  ├─ CloudinaryConfig.java
+│  │  │           │  └─ SecurityConfig.java
+│  │  │           ├─ controller/
+│  │  │           │  ├─ AddressController.java
+│  │  │           │  ├─ CartController.java
+│  │  │           │  ├─ EmailController.java
+│  │  │           │  ├─ ImageController.java
+│  │  │           │  ├─ OrderController.java
+│  │  │           │  ├─ PaymentController.java
+│  │  │           │  ├─ ProductController.java
+│  │  │           │  ├─ ProductReviewController.java
+│  │  │           │  ├─ StoreController.java
+│  │  │           │  └─ UserController.java
+│  │  │           ├─ dto/
+│  │  │           │  ├─ AddressDTO.java
+│  │  │           │  ├─ CartItemResponse.java
+│  │  │           │  ├─ CartResponse.java
+│  │  │           │  ├─ LoginRequest.java
+│  │  │           │  ├─ LoginResponse.java
+│  │  │           │  ├─ PaymentRequest.java
+│  │  │           │  ├─ ProductRequest.java
+│  │  │           │  ├─ ProductResponse.java
+│  │  │           │  ├─ ReviewRequest.java
+│  │  │           │  ├─ StoreRequest.java
+│  │  │           │  ├─ StoreResponse.java
+│  │  │           │  ├─ UpdateUserRequest.java
+│  │  │           │  └─ UserDto.java
+│  │  │           ├─ entity/
+│  │  │           │  ├─ Address.java
+│  │  │           │  ├─ Cart.java
+│  │  │           │  ├─ CartItem.java
+│  │  │           │  ├─ Order.java
+│  │  │           │  ├─ OrderItem.java
+│  │  │           │  ├─ Payment.java
+│  │  │           │  ├─ Product.java
+│  │  │           │  ├─ ProductReview.java
+│  │  │           │  ├─ Role.java
+│  │  │           │  ├─ Store.java
+│  │  │           │  ├─ StoreStatus.java
+│  │  │           │  └─ User.java
+│  │  │           ├─ exceptionHandler/
+│  │  │           │  ├─ AddressNotFoundException.java
+│  │  │           │  ├─ CustomerNotFoundException.java
+│  │  │           │  ├─ GlobalExceptionHandler.java
+│  │  │           │  ├─ PaymentProcessingException.java
+│  │  │           │  ├─ ResourceNotFoundException.java
+│  │  │           │  └─ UserNotFoundException.java
+│  │  │           ├─ repository/
+│  │  │           │  ├─ AddressRepository.java
+│  │  │           │  ├─ CartItemRepository.java
+│  │  │           │  ├─ CartRepository.java
+│  │  │           │  ├─ OrderItemRepository.java
+│  │  │           │  ├─ OrderRepository.java
+│  │  │           │  ├─ PaymentRepository.java
+│  │  │           │  ├─ ProductRepository.java
+│  │  │           │  ├─ ProductReviewRepository.java
+│  │  │           │  ├─ StoreRepository.java
+│  │  │           │  └─ UserRepository.java
+│  │  │           ├─ security/
+│  │  │           │  ├─ JwtAuthenticationFilter.java
+│  │  │           │  ├─ JwtAuthenticationToken.java
+│  │  │           │  └─ JwtUtil.java
+│  │  │           ├─ service/
+│  │  │           │  ├─ AddressService.java
+│  │  │           │  ├─ CartService.java
+│  │  │           │  ├─ CloudinaryService.java
+│  │  │           │  ├─ EmailService.java
+│  │  │           │  ├─ OrderCleanupService.java
+│  │  │           │  ├─ OrderService.java
+│  │  │           │  ├─ PaymentService.java
+│  │  │           │  ├─ ProductReviewService.java
+│  │  │           │  ├─ ProductService.java
+│  │  │           │  ├─ StoreService.java
+│  │  │           │  └─ UserService.java
+│  │  │           └─ EcommerceApiApplication.java
+│  │  └─ resources/
+│  │     └─ application.properties
+│  └─ test/
+│     └─ java/
+│        └─ com/
+│           └─ example/
+│              └─ E_Commerce/
+│                 └─ EcommerceApiApplicationTests.java
+├─ target/
+│  ├─ classes/
+│  │  ├─ com/
+│  │  │  └─ example/
+│  │  │     └─ E_Commerce/
+│  │  │        ├─ config/
+│  │  │        │  ├─ AppConfig.class
+│  │  │        │  ├─ CloudinaryConfig.class
+│  │  │        │  └─ SecurityConfig.class
+│  │  │        ├─ controller/
+│  │  │        │  ├─ AddressController.class
+│  │  │        │  ├─ CartController.class
+│  │  │        │  ├─ EmailController.class
+│  │  │        │  ├─ ImageController.class
+│  │  │        │  ├─ OrderController.class
+│  │  │        │  ├─ PaymentController.class
+│  │  │        │  ├─ ProductController.class
+│  │  │        │  ├─ ProductReviewController.class
+│  │  │        │  ├─ StoreController.class
+│  │  │        │  └─ UserController.class
+│  │  │        ├─ dto/
+│  │  │        │  ├─ AddressDTO.class
+│  │  │        │  ├─ CartItemResponse.class
+│  │  │        │  ├─ CartResponse.class
+│  │  │        │  ├─ LoginRequest.class
+│  │  │        │  ├─ LoginResponse.class
+│  │  │        │  ├─ PaymentRequest.class
+│  │  │        │  ├─ ProductRequest.class
+│  │  │        │  ├─ ProductResponse.class
+│  │  │        │  ├─ ReviewRequest.class
+│  │  │        │  ├─ StoreRequest.class
+│  │  │        │  ├─ StoreResponse.class
+│  │  │        │  ├─ UpdateUserRequest.class
+│  │  │        │  ├─ UserDto.class
+│  │  │        │  └─ UserDto$UserDtoBuilder.class
+│  │  │        ├─ entity/
+│  │  │        │  ├─ Address.class
+│  │  │        │  ├─ Address$AddressBuilder.class
+│  │  │        │  ├─ Cart.class
+│  │  │        │  ├─ CartItem.class
+│  │  │        │  ├─ Order.class
+│  │  │        │  ├─ OrderItem.class
+│  │  │        │  ├─ Payment.class
+│  │  │        │  ├─ Payment$PaymentBuilder.class
+│  │  │        │  ├─ Product.class
+│  │  │        │  ├─ Product$ProductBuilder.class
+│  │  │        │  ├─ ProductReview.class
+│  │  │        │  ├─ Role.class
+│  │  │        │  ├─ Store.class
+│  │  │        │  ├─ Store$StoreBuilder.class
+│  │  │        │  ├─ StoreStatus.class
+│  │  │        │  ├─ User.class
+│  │  │        │  └─ User$UserBuilder.class
+│  │  │        ├─ exceptionHandler/
+│  │  │        │  ├─ AddressNotFoundException.class
+│  │  │        │  ├─ CustomerNotFoundException.class
+│  │  │        │  ├─ GlobalExceptionHandler.class
+│  │  │        │  ├─ PaymentProcessingException.class
+│  │  │        │  ├─ ResourceNotFoundException.class
+│  │  │        │  └─ UserNotFoundException.class
+│  │  │        ├─ repository/
+│  │  │        │  ├─ AddressRepository.class
+│  │  │        │  ├─ CartItemRepository.class
+│  │  │        │  ├─ CartRepository.class
+│  │  │        │  ├─ OrderItemRepository.class
+│  │  │        │  ├─ OrderRepository.class
+│  │  │        │  ├─ PaymentRepository.class
+│  │  │        │  ├─ ProductRepository.class
+│  │  │        │  ├─ ProductReviewRepository.class
+│  │  │        │  ├─ StoreRepository.class
+│  │  │        │  └─ UserRepository.class
+│  │  │        ├─ security/
+│  │  │        │  ├─ JwtAuthenticationFilter.class
+│  │  │        │  ├─ JwtAuthenticationToken.class
+│  │  │        │  └─ JwtUtil.class
+│  │  │        ├─ service/
+│  │  │        │  ├─ AddressService.class
+│  │  │        │  ├─ CartService.class
+│  │  │        │  ├─ CloudinaryService.class
+│  │  │        │  ├─ EmailService.class
+│  │  │        │  ├─ OrderCleanupService.class
+│  │  │        │  ├─ OrderService.class
+│  │  │        │  ├─ PaymentService.class
+│  │  │        │  ├─ ProductReviewService.class
+│  │  │        │  ├─ ProductService.class
+│  │  │        │  ├─ StoreService.class
+│  │  │        │  └─ UserService.class
+│  │  │        └─ EcommerceApiApplication.class
+│  │  └─ application.properties
+│  ├─ generated-sources/
+│  │  └─ annotations/
+│  ├─ generated-test-sources/
+│  │  └─ test-annotations/
+│  ├─ maven-status/
+│  │  └─ maven-compiler-plugin/
+│  │     └─ compile/
+│  │        └─ default-compile/
+│  │           ├─ createdFiles.lst
+│  │           └─ inputFiles.lst
+│  └─ test-classes/
+│     └─ com/
+│        └─ example/
+│           └─ E_Commerce/
+│              └─ EcommerceApiApplicationTests.class
+├─ .classpath
+├─ .env
+├─ .factorypath
+├─ .gitattributes
+├─ .gitignore
+├─ .project
+├─ HELP.md
+├─ mvnw
+├─ mvnw.cmd
+└─ pom.xml
+```
+---
